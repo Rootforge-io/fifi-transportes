@@ -18,7 +18,9 @@
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
+
 
 body {
     font-family: 'Urbanist', sans-serif;
@@ -28,9 +30,29 @@ body {
 
     overflow-x: hidden;
     max-width: 100vw;
+
 }
 
-main {}
+main,
+footer,
+header {
+    a {
+        transition: var(--transition);
+
+        * {
+            transition: var(--transition);
+        }
+    }
+
+    a:hover {
+        color: var(--accent-color);
+
+        * {
+            fill: var(--accent-color);
+            color: var(--accent-color);
+        }
+    }
+}
 
 a {
     text-decoration: none;
@@ -241,28 +263,30 @@ ul {
             .hero-btn {
                 position: relative;
 
-                padding: 16px;
-                border-radius: 60px;
-                border: 1px solid var(--primary-color);
-                line-height: 0.9;
-                height: 48px;
-                margin-right: 48px;
+                span {
+                    padding: 16px 16px 18px 16px;
+                    border-radius: 60px;
+                    border: 1px solid var(--primary-color);
+                    line-height: 0.9;
+                    height: 48px;
+                    margin-right: 48px;
+                }
 
-                &::after {
-                    content: '';
-
+                i {
                     position: absolute;
-                    background-image: url('./src/imagens/arrow.svg');
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: 75%;
                     border-radius: 50%;
                     border: 1px solid var(--primary-color);
-                    height: 44px;
-                    width: 44px;
-                    right: -48px;
+                    height: 48px;
+                    width: 48px;
+                    right: -2px;
+                    top: -10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
 
-                    top: calc(50% - 23px);
+                    svg {
+                        transform: scale(1.25);
+                    }
                 }
             }
         }
@@ -351,7 +375,9 @@ ul {
         color: var(--black);
     }
 
-    .clientes-header {}
+    .clientes-header {
+        margin: 0 0 4rem 2rem;
+    }
 
     .clientes-content {
         .clientes-carousel-wrapper {
@@ -634,10 +660,6 @@ footer {
         color: var(--white);
     }
 
-    a:hover {
-        color: var(--accent-color);
-        transition: var(--transition);
-    }
 
     .footer-content {
         display: flex;
@@ -658,13 +680,9 @@ footer {
                 margin-right: 3rem;
                 position: relative;
 
-                &::after {
-                    content: url('./src/imagens/arrow-link.svg');
+                svg {
                     position: absolute;
-                    right: -32px;
                     top: 0;
-                    width: 24px;
-                    height: 24px;
                 }
             }
         }
