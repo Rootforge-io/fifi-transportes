@@ -1289,6 +1289,7 @@ footer {
             margin-right: auto;
             justify-content: flex-start;
             height: 100%;
+            align-items: flex-start;
         }
 
         .footer-content-right {
