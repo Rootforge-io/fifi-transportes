@@ -7,18 +7,33 @@ document.addEventListener('DOMContentLoaded', () => {
         const mainNav = document.querySelector('.main-nav');
         const body = document.body;
         const closeMenu = document.querySelector('.close-menu');
+        const navLinks = document.querySelectorAll('.main-nav a');
 
-        menuToggle.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
-            menuToggle.classList.toggle('open');
-            body.classList.toggle('no-scroll');
-            closeMenu.classList.toggle('active');
-        });
-        closeMenu.addEventListener('click', () => {
+        // Function to close the menu
+        const closeMenuFn = () => {
             mainNav.classList.remove('active');
             menuToggle.classList.remove('open');
             body.classList.remove('no-scroll');
             closeMenu.classList.remove('active');
+        };
+
+        // Function to open/close the menu
+        const toggleMenu = () => {
+            mainNav.classList.toggle('active');
+            menuToggle.classList.toggle('open');
+            body.classList.toggle('no-scroll');
+            closeMenu.classList.toggle('active');
+        };
+
+        // Toggle menu on hamburger click
+        menuToggle.addEventListener('click', toggleMenu);
+
+        // Close menu on close button click
+        closeMenu.addEventListener('click', closeMenuFn);
+
+        // Close menu when any navigation link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', closeMenuFn);
         });
     }
     menuToggleHandler();
