@@ -592,7 +592,7 @@ ul {
 
         transform: translateX(calc(50vw - 50% - 24px));
 
-        h4 {
+        .clientes-title {
             font-size: 12px;
             font-weight: 800;
             line-height: 16px;
@@ -682,7 +682,7 @@ ul {
             text-align: center;
         }
 
-        h4 {
+        .servicos-subtitle {
             font-size: 18px;
             font-weight: 800;
             line-height: 28px;
@@ -733,7 +733,7 @@ ul {
                 text-align: left;
             }
 
-            h4 {
+            .servicos-subtitle {
                 text-align: left;
             }
         }
@@ -820,7 +820,7 @@ ul {
             text-align: center;
         }
 
-        h4 {
+        .setores-subtitle {
             font-size: 18px;
             font-weight: 800;
             line-height: 28px;
@@ -877,7 +877,7 @@ ul {
                 text-align: left;
             }
 
-            h4 {
+            .setores-subtitle {
                 text-align: left;
             }
         }
@@ -938,7 +938,7 @@ ul {
             margin-bottom: 1rem;
         }
 
-        h4 {
+        .avaliacao-subtitle {
             font-weight: 800;
             font-size: 18px;
             line-height: 28px;
@@ -1031,7 +1031,7 @@ ul {
                 text-align: left;
             }
 
-            h4 {
+            .avaliacao-subtitle {
                 font-weight: 800;
                 font-size: 18px;
                 line-height: 72px;
@@ -1113,7 +1113,7 @@ ul {
                 text-align: left;
             }
 
-            h4 {
+            .avaliacao-subtitle {
                 font-weight: 800;
                 font-size: 18px;
                 line-height: 72px;

@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (servicosContainer && servicosHeader) {
             if (window.innerWidth >= 960) {
                 const containerHeight = servicosContainer.offsetHeight;
-                const headerHeight = servicosHeader.getElementsByTagName('h2')[0].offsetHeight + servicosHeader.getElementsByTagName('h4')[0].offsetHeight;
+                const headerHeight = servicosHeader.getElementsByTagName('h2')[0].offsetHeight + servicosHeader.querySelector('.servicos-subtitle').offsetHeight;
                 const endScrollDistance = containerHeight - headerHeight - 96;
 
                 servicosPinTrigger = ScrollTrigger.create({
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (setoresContainer && setoresHeader) {
             if (window.innerWidth >= 960) {
                 const containerHeight = setoresContainer.offsetHeight;
-                const headerHeight = setoresHeader.getElementsByTagName('h2')[0].offsetHeight + setoresHeader.getElementsByTagName('h4')[0].offsetHeight;
+                const headerHeight = setoresHeader.getElementsByTagName('h2')[0].offsetHeight + setoresHeader.querySelector('.setores-subtitle').offsetHeight;
                 const endScrollDistance = containerHeight - headerHeight - 96;
 
                 setoresPinTrigger = ScrollTrigger.create({
