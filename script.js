@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     end: `+=${endScrollDistance}`,
                     pin: servicosHeader,
                     pinSpacing: false,
-                    anticipatePin: 1
+                    anticipatePin: 0
                 });
             }
         }
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     end: `+=${endScrollDistance}`,
                     pin: setoresHeader,
                     pinSpacing: false,
-                    anticipatePin: 1
+                    anticipatePin: 0
                 });
             }
         }
