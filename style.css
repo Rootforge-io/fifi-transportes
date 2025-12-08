@@ -355,12 +355,6 @@ ul {
                         padding: 12px 12px 14px 12px;
                     }
 
-                    i {
-                        height: 44px;
-                        width: 44px;
-                        right: 0px;
-                        top: -8px;
-                    }
                 }
             }
         }
@@ -385,6 +379,14 @@ ul {
 
                     span {
                         padding: 16px 16px 18px 16px;
+                    }
+
+                    i {
+
+                        height: 54px;
+                        width: 54px;
+                        right: -8px;
+                        top: -13px;
                     }
                 }
             }
